@@ -1,0 +1,83 @@
+body {
+    
+    height: 100vh;
+    
+  }
+
+  body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+h2, h3, p{
+    text-align: center;
+}
+
+
+  header,nav, footer {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the header and footer */
+    padding: 20px; /* Add padding for better appearance */
+    background-color: #053238; /* Background color for header and footer */
+}
+
+nav{
+background-color: black;
+color: white;
+text-align: center;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set link color */
+}
+  main {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the main element */
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 20px; /* Adjust the gap between sections */
+}
+
+/* Style for card sections */
+.card {
+    border: 1px solid #ddd; /* Border for the cards */
+    padding: 20px; /* Padding for content within the cards */
+    border-radius: 8px; /* Rounded corners for a card-like appearance */
+}
+
+/* Style for the course links list */
+.card ul {
+    list-style-type: none; /* Remove bullets */
+}
+
+/* Additional styling for links within the course links list */
+.card a {
+    text-decoration: none; /* Remove underline from links */
+    color: #3498db; /* Set link color */
+}
+
+.card a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+  .footer {
+    background-color:#053238 ;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    text-shadow: grey;
+    grid-column: 1/4;
+}
+.footer span {
+    text-decoration: underline;
+}
+.last-update {
+    color: gold;
+}

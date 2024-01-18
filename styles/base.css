@@ -104,4 +104,11 @@ nav a {
 .profile h1 {
     margin-right: 150px; /* Add space to the left of the name */
     color:white;
-}  
+}
+
+  
+
+/* Add this line to link to larger.css */
+@import url('larger.css');
+
+

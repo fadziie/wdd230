@@ -1,0 +1,25 @@
+/* larger.css */
+
+/* Media query for larger views */
+@media screen and (min-width: 768px) {
+    /* Additional styles for larger views */
+    main {
+      grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    }
+  
+    nav ul {
+      display: flex;
+      justify-content: center; /* Center the items horizontally */
+      flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    }
+  
+    nav li {
+      margin: 0 10px; /* Adjust spacing between navigation items in larger views */
+      margin-bottom: 0; /* Remove margin at the bottom */
+    }
+  
+  }
+
+  
+
+  

@@ -8,3 +8,14 @@ var currentYear = new Date().getFullYear();
   
 // Set current year in HTML
 document.getElementById("currentYear").textContent = currentYear;
+
+// Add this to your existing JavaScript file or create a new one
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerButton = document.getElementById('hamburger');
+    const closeIcon = document.getElementById('closeIcon');
+    const navigation = document.querySelector('.navigation ul');
+
+    hamburgerButton.addEventListener('click', function() {
+        navigation.style.display = (navigation.style.display === 'none' || navigation.style.display === '') ? 'block' : 'none';
+    });
+});

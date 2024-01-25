@@ -15,7 +15,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeIcon = document.getElementById('closeIcon');
     const navigation = document.querySelector('.navigation ul');
 
-    hamburgerButton.addEventListener('click', function() {
-        navigation.style.display = (navigation.style.display === 'none' || navigation.style.display === '') ? 'block' : 'none';
+        hamburgerButton.addEventListener('click', function() {
+            if (navigation.style.display === 'none' || navigation.style.display === '') {
+                navigation.style.display = 'block';
+                hamburgerButton.innerHTML = '&#10005;'; // 'X' symbol
+            } else {
+                navigation.style.display = 'none';
+                hamburgerButton.innerHTML = '&#8801;'; // Hamburger symbol
+            }    
     });
 });

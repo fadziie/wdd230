@@ -106,7 +106,6 @@ nav a {
     color:white;
 }
 
-  /* Add this to your base.css file or create a new CSS file if needed */
 #hamburger {
     display: none; /* Hide in larger views */
     /* Add more styles as needed */
@@ -130,14 +129,6 @@ nav a {
     }
 
 }
-
-
-#hamburger::before {
-    content: "\2022"; /* Unicode for a bullet point */
-    margin-right: 5px;
-    color: #3498db; /* Change color as needed */
-}
-
 
 /* Add this line to link to larger.css */
 @import url('larger.css');

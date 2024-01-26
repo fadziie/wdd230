@@ -47,24 +47,24 @@ nav a {
 }
 
 /* Style for card sections */
-.card {
+.card,.card1 {
     border: 1px solid #ddd; /* Border for the cards */
     padding: 20px; /* Padding for content within the cards */
     border-radius: 8px; /* Rounded corners for a card-like appearance */
 }
 
 /* Style for the course links list */
-.card ul {
+.card ul, .card1 ul {
     list-style-type: none; /* Remove bullets */
 }
 
 /* Additional styling for links within the course links list */
-.card a {
+.card a, .card1 a {
     text-decoration: none; /* Remove underline from links */
     color: #085486; /* Set link color */
 }
 
-.card a:hover {
+.card a:hover, .card1 a:hover {
     text-decoration: underline; /* Underline links on hover */
 }
   .footer {

@@ -1,0 +1,118 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+h2, h3, p{
+    text-align: center;
+}
+
+header,nav, footer {
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the header and footer */
+    padding: 20px; /* Add padding for better appearance */
+    background-color: #002642; /* Background color for header and footer */
+    color: white;
+}
+.navigation{
+    color: white;
+    text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none; /* Remove bullets */
+    }
+    
+    nav a {
+        text-decoration: none; /* Remove underline from links */
+        color: white; /* Set link color */
+    }
+
+    main {
+        max-width: 800px; /* Adjust the maximum width as needed */
+        margin: 0 auto; /* Center the main element */
+        display: grid;
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 5px; /* Adjust the gap between sections */
+        font-weight: 18px;
+    }
+    
+    /* Style for card sections */
+    .card,.card1, .card2, .card3, .card4 {
+        border: 1px solid #ddd; /* Border for the cards */
+        padding: 20px; /* Padding for content within the cards */
+        border-radius: 8px; /* Rounded corners for a card-like appearance */
+    }
+    
+    /* Style for the course links list */
+    .card ul, .card1 ul {
+        list-style-type: none; /* Remove bullets */
+    }
+    
+    /* Additional styling for links within the course links list */
+    .card a, .card1 a {
+        text-decoration: none; /* Remove underline from links */
+        color: #085486; /* Set link color */
+    }
+    
+    .card a:hover, .card1 a:hover {
+        text-decoration: underline; /* Underline links on hover */
+    }
+      .footer {
+        background-color:#002642 ;
+        color: #ffffff;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        text-shadow: grey;
+        grid-column: 1/4;
+    }
+    .footer span {
+        text-decoration: underline;
+    }
+    .last-update {
+        color:orange;
+    }
+    .logo{
+        width: 75px;
+        height: 75px;
+        border-radius: 25%;
+        object-fit: cover;
+        margin-left: 50px;
+        } 
+        #footer-logo {
+            width: 75px;
+            height: 75px;
+            border-radius: 25%;
+            object-fit: cover;
+            margin-left: 50px;
+            } 
+        #hamburger {
+            display: none; /* Hide in larger views */
+            /* Add more styles as needed */
+        }
+        
+        #closeIcon {
+            display: none; /* Hide initially */
+            font-size: 1.5em; /* Adjust the font size as needed */
+            margin-left: 5px; /* Add spacing between hamburger and close icon */
+        }
+        
+        
+        /* Media query for smaller views */
+        @media screen and (max-width: 768px) {
+            #hamburger {
+                display: block; /* Show in smaller views */
+            }
+        
+            #closeIcon {
+                display: none; /* Hide initially in smaller views */
+            }
+        
+        }
+        
+        /* Add this line to link to larger.css */
+        @import url('larger.css');
+        

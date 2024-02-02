@@ -12,8 +12,9 @@
     <meta property="og:image" content="https://images.app.goo.gl/3X9nZBb6VrWLqEPA">
     <meta property="og:url" content="https://fadziie.github.io/wdd230/">
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet"  href="styles/base.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet"  href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel = "stylesheet" href="styles/large.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<title> Knox Tafadzwa Mangwiro - WDD 230 - Web Frontend Development</title>
@@ -21,37 +22,36 @@
 <body>
     <header class="header">
 		<div class="logo">
-        <img src="images/mutare_chamber_logo.webp" alt="header logo">
+        <img class="logo_image" src="images/mutare_chamber_logo.webp" alt="header logo">
+        <section class="brand">
+            <h1>Mutare Chamber of Commerce</h1>
+        </section>
 		</div>
-        <h1>Mutare Chamber of Commerce</h1>
-	</header>
-    <nav class="navigation">
-        <!-- Hamburger button for small views -->
-         <button id="hamburger">&#8801;<span id="closeIcon">&times;</span></button>
-         <ul>
-            <li><a href="index.html" class="menu">Home</a></li>
-            <li><a href="discover.html" class="menu">Discover</a></li>
-            <li><a href="directory.html" class="menu">Directory</a></li>
-            <li><a href='join.html' class="menu">Join</a></li>
-            </ul>
-                <div class="social-media">
-                  <a href="https://www.facebook.com/" target="_blank">
-                    <img src="images/facebook.png" alt="facebook" >
-                </a>
-                <a href="https://www.linkedin.com/" target="_blank">
-                    <img src="images/linkedin.png" alt="linkedin" >
-                </a>
-                  </div>
-    </nav>
+        <nav class="navigation">
+            <!-- Hamburger button for small views -->
+             <button id="hamburger">&#8801;<span id="closeIcon">&times;</span></button>
+             <ul>
+                <li><a href="index.html" class="menu">Home</a></li>
+                <li><a href="discover.html" class="menu">Discover</a></li>
+                <li><a href="directory.html" class="menu">Directory</a></li>
+                <li><a href='join.html' class="menu">Join</a></li>
+                </ul>
+            </nav>
+                    <div class="social">
+                      <a href="https://www.facebook.com/" target="_blank">
+                        <img src="images/facebook.png" alt="facebook" >
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <img src="images/linkedin.png" alt="linkedin" >
+                    </a>
+                      </div>
+        </header>
     <main class="main">
         <section id="hero-banner">
               <p class="hero-subtitle">Join us for exciting events and more!</p>
               <a href="join.html" class="hero_button">Join</a>
               </div>
               <picture>
-                  <source media="(max-width: 600px)" srcset="images/wdd230-org_small.webp">
-                  <source media="(max-width: 768px)" srcset="images/wdd230-org_medium.webp">
-                  <source media="(max-width: 1024px)" srcset="images/wdd230-org_large.webp">
                   <img src="images/placeholder.png" alt="Hero Banner Image">
               </picture>
               </section>
@@ -80,15 +80,19 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc scelerisque viverr</p>
     </section>
 	</main>
- 
-	<footer class=" footer">
+ <footer class=" footer">
         <div class="footer-logo">
+            <a class="logo-link" href="chamber.html">
             <img src="images/mutare_chamber_logo.webp" alt="Footer Logo">
+            </a>
+            <section class="company">
+                <h2 class="heading">Mutare Chamber of Commerce</h2>
+                <h3 class="heading">5149 Dangamvura Mall,Mutare</h3>
+            </section>
           </div>     
 <p>&copy; <span id="currentYear"></span>| Knox Tafadzwa Mangwiro | Zimbabwe</p>
 		<p class="last-update" id="lastModified"></p>
 	</footer>
 	<script src="scripts/chamber.js"></script>
-    
-</body>
+    </body>
 </html>

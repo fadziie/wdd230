@@ -1,0 +1,31 @@
+@media only screen and (max-width: 600px) {
+  /* Add styles for small screens here */
+  header {
+    height: 150px;
+  }
+  .banner {
+    height: 200px;
+    background-image: url('village.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .events {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .weather {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .businesses {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .business {
+    margin-bottom: 20px;
+  }
+  footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

@@ -8,6 +8,14 @@
       grid-template-columns: repeat(3, 1fr); /* Two columns layout */
       grid-template-rows: repeat(3,1fr);
     }
+  
+    .logo{
+      grid-column: 1/2;
+    }
+
+    .navigation{
+      grid-column: 2/3;
+    }
 
     #hero-banner{
         grid-column: 1/4;

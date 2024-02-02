@@ -1,0 +1,33 @@
+/* Large devices (desktops) */
+@media only screen and (min-width: 1025px) {
+  /* Add styles for large screens here */
+  Header {
+    Height: 300px;
+  }
+  .banner {
+    Height: 600px;
+  }
+  .events {
+    Margin-top: 60px;
+    Margin-bottom: 60px;
+  }
+  .weather {
+    Margin-top: 60px;
+    Margin-bottom: 60px;
+  }
+  .businesses {
+    Margin-top: 60px;
+    Margin-bottom: 60px;
+    Display: flex;
+    Flex-wrap: wrap;
+    Justify-content: space-between;
+  }
+  .business {
+    Width: 20%;
+    Margin-bottom: 20px;
+  }
+  Footer {
+    Margin-top: 60px;
+    Margin-bottom: 60px;
+  }
+}

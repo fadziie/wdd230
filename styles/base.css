@@ -105,7 +105,12 @@ nav a {
     margin-right: 150px; /* Add space to the left of the name */
     color:white;
 }
-
+.responsive-map {
+    width: 100%;
+    height: 300px; /* You can adjust the height as needed */
+    border: 0;
+  }
+  
 #hamburger {
     display: none; /* Hide in larger views */
     /* Add more styles as needed */

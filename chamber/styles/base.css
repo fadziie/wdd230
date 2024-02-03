@@ -129,7 +129,6 @@ header,nav, footer {
     }
       .footer {
         background-color:#002642 ;
-        color: #ffffff;
          align-items: center;
         padding: 2% 2% 0 2%;
         border-radius: 10px;
@@ -137,19 +136,20 @@ header,nav, footer {
     }
 
     .Location {
-        text-decoration: none;
-        color:#e59500;
+        text-decoration:none;
         font-weight: 700;
         display: block;
         margin-top: 15px;
     }
+.contacts #Location{
+    color:#e59500;
+}
     .location:hover {
         color:#001625;
     }
 
     .contacts{
         grid-column: 2/3;
-
     }
 
     .footer-logo {

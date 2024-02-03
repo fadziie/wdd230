@@ -102,6 +102,8 @@ header,nav, footer {
         grid-template-columns: 1fr; /* Single column layout */
         gap: 5px; /* Adjust the gap between sections */
         font-weight: 18px;
+        color: #001625;
+        border-color: #e59500;
     }
     
     /* Style for card sections */
@@ -128,11 +130,26 @@ header,nav, footer {
       .footer {
         background-color:#002642 ;
         color: #ffffff;
-        display: block;
-        align-items: center;
+         align-items: center;
         padding: 2% 2% 0 2%;
         border-radius: 10px;
         font-size: 70%;
+    }
+
+    .Location {
+        text-decoration: none;
+        color:#e59500;
+        font-weight: 700;
+        display: block;
+        margin-top: 15px;
+    }
+    .location:hover {
+        color:#001625;
+    }
+
+    .contacts{
+        grid-column: 2/3;
+
     }
 
     .footer-logo {
@@ -152,13 +169,17 @@ header,nav, footer {
         object-fit: cover;
         margin-right: 20px;
         } 
-        #footer-logo {
+        .footer-logo img {
             width: 75px;
             height: 75px;
             border-radius: 25%;
             object-fit: cover;
             margin-left: 50px;
             } 
+
+            .hr{
+                max-width: 80%;
+            }
         #hamburger {
             display: none; /* Hide in larger views */
             /* Add more styles as needed */

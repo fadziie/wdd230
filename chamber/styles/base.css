@@ -72,7 +72,6 @@ header,nav, footer {
         align-items: center;
         margin-right: 0;
         padding: 0;
-        gap: -5px;
     }
 
     .social a {
@@ -101,7 +100,7 @@ header,nav, footer {
         display: grid;
         grid-template-columns: 1fr; /* Single column layout */
         gap: 5px; /* Adjust the gap between sections */
-        font-weight: 18px;
+        font-size: 18px;
         color: #001625;
         border-color: #e59500;
     }

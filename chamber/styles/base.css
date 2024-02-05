@@ -1,3 +1,6 @@
+
+        
+
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -18,7 +21,8 @@ header{
     display: grid;
     grid-template-columns: 3fr 4fr 1fr;
     margin-bottom: 5%;
-    padding: 0 2% 3% 2%; border-radius: 10px;
+    
+    border-radius: 10px;
     height: 150px;
 }
 .hero-banner{
@@ -26,18 +30,20 @@ header{
 }
 
 .hero-banner img{
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
 }
-.logo, .brand{
+.logo{
     display:flex;
     align-items: center;
-    margin-right: 0;
+  
 
 }
 header .brand {
     text-align: left;
     font-size: 60%;
-    padding: 0;
+    padding: 3%;
 
 }
 header .brand h1 {
@@ -45,12 +51,12 @@ header .brand h1 {
     
 }
 .logo_image{
-    width: 100%;
+    max-width: 100%;
     
 }
     
 
-header,nav, footer {
+header,footer {
     margin: 0 auto; /* Center the header and footer */
     padding: 20px; /* Add padding for better appearance */
     background-color: #002642; /* Background color for header and footer */
@@ -72,15 +78,16 @@ header,nav, footer {
         align-items: center;
         margin-right: 0;
         padding: 0;
+        box-sizing: border-box;
     }
 
     .social a {
-        margin-right: 30px;
+        margin-right: 10%;
         width: 40px;
     }
 
     .social a img{
-        width: 32px;
+        max-width: 100%;
         height:auto;
         object-fit: cover;
     }
@@ -110,11 +117,6 @@ header,nav, footer {
         border: 1px solid #ddd; /* Border for the cards */
         padding: 20px; /* Padding for content within the cards */
         border-radius: 8px; /* Rounded corners for a card-like appearance */
-    }
-    
-    /* Style for the course links list */
-    .card ul, .card1 ul {
-        list-style-type: none; /* Remove bullets */
     }
     
     /* Additional styling for links within the course links list */
@@ -193,16 +195,39 @@ header,nav, footer {
         
         /* Media query for smaller views */
         @media screen and (max-width: 768px) {
+            .footer {
+                display: flex;
+                flex-direction: column;
+                align-items: center; /* Center align the items if desired */
+            }
+            .footer-logo, .contacts, .section2 {
+                width: 100%; /* Ensure they take up the full width */
+            }
+            .section2 {
+                display: flex;
+                flex-direction: column;
+            }
+            .section2{
+                display:grid;
+                grid-template-columns: 1fr;
+            }
+            
             #hamburger {
                 display: block; /* Show in smaller views */
             }
         
-            #closeIcon {
-                display: none; /* Hide initially in smaller views */
+            nav ul {
+                display: none; /* Initially hide the navigation menu */
+            }
+        
+            /* Ensure the navigation menu displays as a column when toggled open by JS */
+            nav ul {
+                flex-direction: column;
             }
         
         }
-        
-        /* Add this line to link to larger.css */
-        @import url('larger.css');
+        /* Add this to show the navigation menu items vertically when the hamburger menu is clicked */
+#hamburger.active + nav ul {
+    display: flex; /* Or 'block' depending on your setup */
+}
         

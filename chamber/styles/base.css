@@ -37,6 +37,9 @@ header{
 .logo{
     display:flex;
     align-items: center;
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
   
 
 }
@@ -44,6 +47,7 @@ header .brand {
     text-align: left;
     font-size: 60%;
     padding: 3%;
+    margin-right: 20%;
 
 }
 header .brand h1 {
@@ -164,11 +168,11 @@ header,footer {
         color:orange;
     }
    .logo_image{
-        width: 65px;
-        height: 50px;
+    width: 65px;
+    height: 50px;
         border-radius: 25%;
         object-fit: cover;
-        margin-right: 20px;
+        
         } 
         .footer-logo img {
             width: 75px;
@@ -186,10 +190,14 @@ header,footer {
             /* Add more styles as needed */
         }
         
-        #closeIcon {
-            display: none; /* Hide initially */
-            font-size: 1.5em; /* Adjust the font size as needed */
-            margin-left: 5px; /* Add spacing between hamburger and close icon */
+        #hamburger{
+            border: 1px solid #001625;
+            background-color: #e59500;
+            margin-left: 20%;
+        }
+
+        .footer.Location{
+            text-decoration: #e59500;
         }
         
         

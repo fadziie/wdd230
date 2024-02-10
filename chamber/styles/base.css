@@ -1,5 +1,5 @@
 
-        
+      /* base.css */  
 
 body, h1, h2, h3, p, ul, li {
     margin: 0;
@@ -181,6 +181,9 @@ header,footer {
             object-fit: cover;
             margin-left: 50px;
             } 
+            .section2{
+                padding-bottom: 1%;
+            }
 
             .hr{
                 max-width: 80%;
@@ -203,25 +206,32 @@ header,footer {
         
         /* Media query for smaller views */
         @media screen and (max-width: 768px) {
+
+            .social a {
+                margin: 0 5%; /* Adjust social icon margin */
+            }
+            .social a img, .logo_image, .footer-logo img {
+                max-width: 100%;
+                height: auto;}
             .footer {
                 display: flex;
                 flex-direction: column;
-                align-items: center; /* Center align the items if desired */
+                align-items: center;
+                
             }
             .footer-logo, .contacts, .section2 {
                 width: 100%; /* Ensure they take up the full width */
-            }
-            .section2 {
-                display: flex;
-                flex-direction: column;
-            }
-            .section2{
-                display:grid;
-                grid-template-columns: 1fr;
+                text-align: center;
             }
             
-            #hamburger {
+            
+             #hamburger {
                 display: block; /* Show in smaller views */
+                margin: 10px auto;
+                padding: 10px;
+                background-color: #e59500;
+                border: none;
+                cursor: pointer;
             }
         
             nav ul {

@@ -67,3 +67,31 @@
         margin-bottom: 0; /* Remove margin at the bottom */
       }
 }
+
+@media screen and (min-width: 1025px) {
+  .footer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+  }
+  .footer-logo {
+      grid-column: 1 / 2;
+  }
+  .contacts {
+      grid-column: 2 / 3;
+  }
+  .section2 {
+   
+      
+      flex-direction: row; /* Explicitly define row direction for clarity */
+      display: flex;
+      justify-content: center; /* Evenly space content */
+      align-items: center;
+      gap: 20px; /* Optional: Adjust gap between items */
+  }
+
+  
+  nav ul {
+      display: flex;
+      justify-content: space-around;
+  }
+}

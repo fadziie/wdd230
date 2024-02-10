@@ -248,4 +248,21 @@ header,footer {
 #hamburger.active + nav ul {
     display: flex; /* Or 'block' depending on your setup */
 }
-        
+.theme-switch-wrapper {
+    position: absolute;
+    top: 20px;
+    right: 60px; /* Adjust based on the size and position of your hamburger menu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
+    background-color: #333; /* Dark backgrounds for specific elements */
+    color: #fff;
+}

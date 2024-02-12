@@ -12,8 +12,8 @@
     <meta property="og:image" content="https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F54%2F72%2F79%2F54727998871a1d225a0654dd2c432bfe.jpg&tbnid=kAJ-dw-eROWkDM&vet=12ahUKEwiX28KdiJCEAxX5dKQEHdA7Bg8QMygMegUIARCRAQ..i&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fmutare-zimbabwe-with-my-old-office-in-the-foreground--490329478159302276%2F&docid=qNucgJfiAIyiNM&w=3456&h=2304&itg=1&q=mutare&ved=2ahUKEwiX28KdiJCEAxX5dKQEHdA7Bg8QMygMegUIARCRAQ">
     <meta property="og:url" content="https://fadziie.github.io/wdd230/">
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet"  href="styles/base.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet"  href="styles/base.css">
     <link rel = "stylesheet" href="styles/large.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<title> Knox Tafadzwa Mangwiro - WDD 230 - Web Frontend Development</title>
@@ -22,7 +22,7 @@
     <header class="header">
 		<div class="profile">
         <h1>Knox Tafadzwa Mangwiro</h1>
-		<img class="profile-picture"  src="images/selfie_knox.jpg" alt="knox selfie">
+		<img class="profile-picture"  src="images/selfie_knox.webp" alt="knox selfie">
 		</div>
 	</header>
     <nav class="navigation">
@@ -38,6 +38,14 @@
             </ul>
     </nav>
     <main class="main">
+        <div class="hero">
+        <picture>
+            <source srcset="images/durban_temple_large.webp" media="(min-width: 960px)">
+            <source srcset="images/durban_temple_small.webp" media="(min-width: 320px)">
+            <img src="images/durban_temple_small.webp" alt="Favorite Latter-day Temple" style="width: 100%; height: auto;">
+          </picture>
+          <div class="temple-overlay">Durban Temple</div>
+        </div>
         <h2> WDD 230 : Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>

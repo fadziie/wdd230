@@ -138,4 +138,24 @@ nav a {
 /* Add this line to link to larger.css */
 @import url('larger.css');
 
-
+.hero {
+    position: relative;
+    display: block;
+    max-width: 960px; /* Adjust if a larger image is used */
+    margin: auto;
+  }
+  .hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .temple-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    padding: 10px;
+    width: 100%; /* Ensure it spans the full width of the image */
+  }
+  

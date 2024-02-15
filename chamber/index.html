@@ -57,8 +57,11 @@
               <h2 class="hero-subtitle">Join us at Mutare Chamber of Commerce!</h2>
               <a href="join.html" class="hero_button">Join the Chamber</a>
               <picture>
-                  <img src="images/placeholder.png" alt="Hero Banner Image">
-              </picture>
+                <source media="(max-width: 600px)" srcset="images/wdd230-org_small.webp">
+                <source media="(max-width: 768px)" srcset="images/wdd230-org_medium.webp">
+                <source media="(max-width: 1024px)" srcset="images/wdd230-org_large.webp">
+                <img src="images/wdd230-org_large.webp" alt="hero-banner Image">
+            </picture>
               </section>
         <section class="card">
             <h3>Events</h3>

@@ -25,11 +25,25 @@ header{
     border-radius: 10px;
     height: 150px;
 }
-.hero-banner{
-    height: 200px;
+#hero-banner{
+    height: auto;
+    position: relative;
+    display: block;
+    max-width: 1200px;
+}
+#hero-banner a {
+    position: absolute;
+    background-color: #e59500;
+    color: #001625;
+    text-decoration: none;
+    box-shadow: 3px 3px 3px #002642;
+    padding: 3%;
+    border-radius: 10px;
+    top: 40px;
+    left: 40%;
 }
 
-.hero-banner img{
+#hero-banner img{
     max-width: 100%;
     height: auto;
     object-fit: cover;
@@ -106,7 +120,7 @@ header,footer {
     }
 
     main {
-        max-width: 90%; /* Adjust the maximum width as needed */
+        max-width: 100%; /* Adjust the maximum width as needed */
         margin: 0 auto; /* Center the main element */
         display: grid;
         grid-template-columns: 1fr; /* Single column layout */
@@ -116,6 +130,8 @@ header,footer {
         border-color: #e59500;
         box-sizing: border-box;
     }
+
+    
     
     /* Style for card sections */
     .card,.card1, .card2, .card3, .card4 {
@@ -158,10 +174,7 @@ header,footer {
         grid-column: 2/3;
     }
 
-    .footer-logo {
-        max-width: 50%;
-        margin-left: 25%;
-    }
+    
     .footer span {
         text-decoration: underline;
     }
@@ -191,6 +204,7 @@ header,footer {
             }
         #hamburger {
             display: none; /* Hide in larger views */
+            
             /* Add more styles as needed */
         }
         
@@ -198,6 +212,8 @@ header,footer {
             border: 1px solid #001625;
             background-color: #e59500;
             margin-left: 20%;
+            display: flex;
+            justify-content: flex-end;
         }
 
         .footer.Location{
@@ -267,7 +283,6 @@ body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
     background-color: #333; /* Dark backgrounds for specific elements */
     color: #fff;
 }
- .hero-banner img{
-    width: 100%;
-    object-fit: cover;
- }
+.card {
+     outline: 1px solid red;
+  }

@@ -15,13 +15,23 @@
     align-items: center;
     justify-content: center;
   }
-  
-  .lazy {
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out;
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      filter: brightness(0);
+    }
+    to {
+      opacity: 1;
+      filter: brightness(1);
+    }
+  }
+  img {
+    /*opacity: 0;*/
+    /*transition: opacity 0.5s ease-in-out;*/
+    animation: fadeIn 2s ease-out;
   }
   
-  .lazy.loaded {
+  /*.lazy.loaded {
     opacity: 1;
-  }
+  }*/
   

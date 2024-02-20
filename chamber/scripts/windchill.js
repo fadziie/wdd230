@@ -8,7 +8,7 @@ const captionElement = document.querySelector("figcaption");
 // Function to fetch weather data from OpenWeatherMap API
 async function fetchWeatherData() {
   const apiKey = "e9ad653b9e064757388ed45595c70f41";
-  const city = "Durban";
+  const city = "Mutare";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
 
   try {

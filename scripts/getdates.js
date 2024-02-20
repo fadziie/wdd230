@@ -25,3 +25,21 @@ document.addEventListener('DOMContentLoaded', function() {
             }    
     });
 });
+
+// Calculate and display the time between user visits
+const daysBetweenVisits = document.getElementById('daysBetweenVisits');
+const lastVisit = localStorage.getItem('lastVisit');
+const currentDate = new Date();
+const currentTimestamp = currentDate.getTime();
+const oneDayMilliseconds = 24 * 60 * 60 * 1000; // 1 day in milliseconds
+
+if (lastVisit) {
+  const lastVisitTimestamp = parseInt(lastVisit);
+  const days = Math.round((currentTimestamp - lastVisitTimestamp) / oneDayMilliseconds);
+  daysBetweenVisits.textContent = `Days since last visit: ${days}`;
+} else {
+  daysBetweenVisits.textContent = "Welcome! It's your first visit.";
+}
+
+// Store the current visit timestamp in local storage
+localStorage.setItem('lastVisit', currentTimestamp.toString());

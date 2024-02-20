@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name = "author" content = "Knox Tafadzwa Mangwiro">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Progress loading or lazy-loading of images">
+  <link rel="stylesheet" href="styles/lazyload.css">
+  <title>Lazy Loading Images</title>
+  </head>
+<body>
+  <header>
+    <h1>Lazy Loading</h1>
+  </header>
+  <main>
+<div class="image-container">
+    <picture>
+      <source srcset="images/placeholder.png" media="(max-width: 600px)">
+      <img class="lazy" data-src="https://placekitten.com/300/400" alt="Image 1">
+    </picture>
+
+    <picture>
+      <source srcset="images/placeholder.png" media="(max-width: 600px)">
+      <img class="lazy" data-src=" https://placebear.com/300/400" alt="Image 2">
+    </picture>
+
+    <picture>
+      <source srcset="images/placeholder.png" media="(max-width: 600px)">
+      <img class="lazy" data-src="https://placebeard.it/300/400" alt="Image 3">
+    </picture>
+
+    <picture>
+      <source srcset="images/placeholder.png" media="(max-width: 600px)">
+      <img class="lazy" data-src="https://loremflickr.com/300/400/car" alt="Image 4">
+    </picture>
+
+    <picture>
+      <source srcset="images/placeholder.png" media="(max-width: 600px)">
+      <img class="lazy" data-src="https://loremflickr.com/300/400/dog" alt="Image 5">
+    </picture>
+
+    <picture>
+      <source srcset="images/placeholder.png" media="(max-width: 600px)">
+      <img class="lazy" data-src="https://loremflickr.com/300/400/Paris" alt="Image 6">
+    </picture>
+  </div>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentYear"></span>| Knox Tafadzwa Mangwiro | Zimbabwe</p>
+		<p class="last-update" id="lastModified"></p>
+  </footer>
+  <script src="scripts/lazyload.js" defer></script>
+  <script src="scripts/getdates.js"></script>
+</body>
+</html>

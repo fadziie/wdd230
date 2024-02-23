@@ -286,3 +286,50 @@ body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
 .card {
      outline: 1px solid red;
   }
+
+  /* discover css*/
+
+   styles.css 
+.discover {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .discover{
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Sidebar takes 1/4th and main content takes 3/4ths */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .discover_images{
+    outline: 1px solid green;
+    grid-column: 2/3;
+  }
+  
+  .sidebar {
+    background-color: #f0f0f0; /* Example color */
+    outline: 1px solid red;
+  }
+  
+  .discover img {
+    width: 100%;
+    transition: transform 0.5s ease;
+  }
+  
+  .discover img:hover {
+    transform: scale(1.05); /* Example hover effect */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .discover {
+      grid-template-columns: 1fr; /* Single column for mobile */
+    }
+  
+    .discover img:hover {
+      transform: none; /* No hover effect for mobile */
+    }
+  }
+  

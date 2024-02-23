@@ -26,20 +26,29 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Calculate and display the time between user visits
-const daysBetweenVisits = document.getElementById('daysBetweenVisits');
-const lastVisit = localStorage.getItem('lastVisit');
-const currentDate = new Date();
-const currentTimestamp = currentDate.getTime();
-const oneDayMilliseconds = 24 * 60 * 60 * 1000; // 1 day in milliseconds
 
-if (lastVisit) {
-  const lastVisitTimestamp = parseInt(lastVisit);
-  const days = Math.round((currentTimestamp - lastVisitTimestamp) / oneDayMilliseconds);
-  daysBetweenVisits.textContent = `Days since last visit: ${days}`;
-} else {
-  daysBetweenVisits.textContent = "Welcome! It's your first visit.";
-}
 
-// Store the current visit timestamp in local storage
-localStorage.setItem('lastVisit', currentTimestamp.toString());
+document.addEventListener('DOMContentLoaded', function() {
+  const daysBetweenVisits = document.getElementById('daysBetweenVisits');
+  if (!daysBetweenVisits) {
+    console.log("Element with ID 'daysBetweenVisits' does not exist in the document.");
+    return; // Exit if the element does not exist
+  }
+
+  const lastVisit = localStorage.getItem('lastVisit');
+  const currentDate = new Date();
+  const currentTimestamp = currentDate.getTime();
+  const oneDayMilliseconds = 24 * 60 * 60 * 1000; // 1 day in milliseconds
+
+  if (lastVisit) {
+    const lastVisitTimestamp = parseInt(lastVisit);
+    const days = Math.round((currentTimestamp - lastVisitTimestamp) / oneDayMilliseconds);
+    daysBetweenVisits.textContent = days === 1 ? `You last visited 1 day ago.` : `You last visited ${days} days ago.`;
+  } else {
+    daysBetweenVisits.textContent = "Welcome! Let us know if you have any questions.";
+  }
+
+  // Store the current visit timestamp in local storage
+  localStorage.setItem('lastVisit', currentTimestamp.toString());
+});
+

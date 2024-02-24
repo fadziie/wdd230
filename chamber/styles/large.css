@@ -69,6 +69,9 @@
 }
 
 @media screen and (min-width: 1025px) {
+  #hamburger{
+    display: none;
+  }
   .footer {
       display: grid;
       grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */

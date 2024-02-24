@@ -305,21 +305,54 @@ body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
   }
 
   .discover_images{
-    outline: 1px solid green;
     grid-column: 2/3;
+  }
+
+   .discover_images section{
+    border: 1px solid #001625;
+    padding: 10px; /* Adds some spacing inside the border */
+    margin-bottom: 30px; /* Increases the spacing between each section */
   }
   
   .sidebar {
     background-color: #f0f0f0; /* Example color */
-    outline: 1px solid red;
+    outline: 1px solid #001625;
   }
-  
-  .discover img {
+
+  .sidebar > div {
+    padding: 10px;
+    margin-bottom: 20px; /* Space between sidebar items */
+    background-color: #f0f0f0; /* Example background color */
+    border-radius: 5px; /* Example border radius */}
+
+    .sidebar {
+        /*display: flex;
+        flex-direction: column;*/
+        display: grid;
+        grid-row: auto auto auto;
+      }
+      
+      .sidebar > div {
+        margin-bottom: 20px; /* Space between div elements */
+      }
+      
+      .sidebar > div:last-child {
+        margin-bottom: 0; /* Remove margin from the last div */
+      }
+
+      .sidebar > div.expandable {
+        flex-grow: 1;
+      }
+   #visitMessage, #demographics ,#calendar{
+    border: 1px solid #001625;
+
+  }
+  .discover-imgs {
     max-width: 100%;
     transition: transform 0.5s ease;
   }
   
-  .discover img:hover {
+  .discover-imgs:hover {
     transform: scale(1.05); /* Example hover effect */
   }
   

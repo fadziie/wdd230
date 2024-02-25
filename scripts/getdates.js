@@ -52,3 +52,24 @@ document.addEventListener('DOMContentLoaded', function() {
   localStorage.setItem('lastVisit', currentTimestamp.toString());
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Assuming 'YOUR_API_KEY_HERE' is your actual API key
+  const API_KEY = 'eqmeniv1bdgbjrfsjji00obvh8ej0cfykd0cyx1d'; // Replace this with your real API key
+  const RSS_URL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent('https://www.herald.co.zw/feed/')}&api_key=${API_KEY}`;
+
+  fetch(RSS_URL)
+    .then(response => response.json())
+    .then(data => {
+      const feedContainer = document.querySelector('.news-feed');
+      data.items.forEach(item => {
+        const article = document.createElement('article');
+        article.innerHTML = `
+          <h4><a href="${item.link}" target="_blank">${item.title}</a></h4>
+          <p>${item.pubDate}</p>
+          <p>${item.description}</p>
+        `;
+        feedContainer.appendChild(article);
+      });
+    })
+    .catch(error => console.error('Error loading the news feed:', error));
+});

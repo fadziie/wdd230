@@ -73,3 +73,10 @@ document.addEventListener('DOMContentLoaded', function() {
     })
     .catch(error => console.error('Error loading the news feed:', error));
 });
+
+fetch(RSS_URL)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data); // Check the structure here
+    // Rest of your code...
+  });

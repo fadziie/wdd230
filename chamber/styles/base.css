@@ -361,7 +361,7 @@ body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
         grid-column: 1; /* Ensure discover_images takes full width */
       }
     
-      .discover-images section {
+      .discover_images section {
         margin-bottom: 20px; /* Adjust if needed */
       }
   

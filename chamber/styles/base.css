@@ -369,4 +369,22 @@ body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
       transform: none; /* No hover effect for mobile */
     }
   }
+
+  form, .membership-benefits {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .membership-benefits {
+    width: 40%;
+    margin-left: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .membership-benefits {
+      display: block;
+      width: auto;
+      margin: 0;
+    }
+  }
   

@@ -378,6 +378,7 @@ body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
   .membership-benefits {
     width: 40%;
     margin-left: 20px;
+    
   }
   
   @media screen and (max-width: 768px) {
@@ -388,3 +389,52 @@ body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
     }
   }
   
+  
+@media screen and (min-width: 768px) {
+    main.join{
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr)); /* Creates a 2-column layout where each column takes up an equal fraction of the available space */
+      gap: 15px; /* Sets both the row and column gaps to 15px */
+      
+    }
+    
+  }
+  form {
+    text-align: center;
+    outline: 1px solid #e59500;
+}
+.form-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-row label {
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 1rem;
+    color: #001625;
+    font-size: 1rem;
+}
+
+form input, form select, form textarea {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #555;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+input, textarea {
+    width: 100%;
+  }

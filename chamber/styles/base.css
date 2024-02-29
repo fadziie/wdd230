@@ -378,7 +378,7 @@ body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
   .membership-benefits {
     margin-right: 1.5rem;
     margin-top: 1.5rem;
-    border: 1px solid #e59500;
+    border: 5px solid #e59500;
     border-radius: 10px;
         grid-column: 2/3;
         height: 90%;
@@ -418,7 +418,7 @@ body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
     align-items: center;
     margin-top: 1.5rem;
     margin-left: 1.5rem;
-    border: 1px solid #e59500;
+    border: 5px solid #e59500;
     border-radius: 10px;
 }
 

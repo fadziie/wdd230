@@ -376,10 +376,20 @@ body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
   }
   
   .membership-benefits {
-    width: 40%;
-    margin-left: 20px;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    border: 1px solid #e59500;
+    border-radius: 10px;
+        grid-column: 2/3;
+        height: 90%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+    }
     
-  }
+  
   
   @media screen and (max-width: 768px) {
     .membership-benefits {
@@ -401,18 +411,23 @@ body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
   }
   form {
     text-align: center;
-    outline: 1px solid #e59500;
 }
 .form-row {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    border: 1px solid #e59500;
+    border-radius: 10px;
 }
 
 .form-row label {
     margin-bottom: 0.5rem;
     text-align: left;
+    width: 100%;
+    padding: 0.5px;
+    margin-left: 40px;
 }
 
 form label {
@@ -435,6 +450,3 @@ form input, form select, form textarea {
     transition: border-color 0.3s ease;
     box-sizing: border-box;
 }
-input, textarea {
-    width: 100%;
-  }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "author" content = "Knox Tafadzwa Mangwiro">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Knox Tafadzwa Mangwiro's portfolio of WDD 230 Web Frontend Development assignments and projects. Discover innovative designs, coding examples, and comprehensive project showcases that highlight the latest in web development techniques and trends.">
+    <!-- Open Graph meta tags for social media -->
+    <meta property="og:title" content="WDD230- Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F54%2F72%2F79%2F54727998871a1d225a0654dd2c432bfe.jpg&tbnid=kAJ-dw-eROWkDM&vet=12ahUKEwiX28KdiJCEAxX5dKQEHdA7Bg8QMygMegUIARCRAQ..i&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fmutare-zimbabwe-with-my-old-office-in-the-foreground--490329478159302276%2F&docid=qNucgJfiAIyiNM&w=3456&h=2304&itg=1&q=mutare&ved=2ahUKEwiX28KdiJCEAxX5dKQEHdA7Bg8QMygMegUIARCRAQ">
+    <meta property="og:url" content="https://fadziie.github.io/wdd230/">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet"  href="styles/base.css">
+    <link rel = "stylesheet" href="styles/large.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<title>Form Page</title>
+</head>
+<body>
+    <header class="header">
+		<div class="profile">
+        <h1>Knox Tafadzwa Mangwiro</h1>
+		<img class="profile-picture"  src="images/selfie_knox.webp" alt="knox selfie">
+		</div>
+	</header>
+    <nav class="navigation">
+        <!-- Hamburger button for small views -->
+         <button id="hamburger">&#8801;<span id="closeIcon">&times;</span></button>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+            </ul>
+    </nav>
+    <main>
+        <form action="record.html" method="get">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 characters long and can only be alpha-numeric" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required>
+
+            <label for="page-rating">Page Rating:</label>
+            <input type="range" id="page-rating" name="page-rating" min="1" max="10" step="1">
+            <span id="rangeValue">5</span>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+ 
+	<footer class=" footer">
+<!-- Hometown map,adjust the width and height attributes as needed -->
+<iframe
+class="responsive-map"
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.074546208982!2d32.629166!3d-18.9699713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19300f6c301363c7%3A0x6e3e4d58e3d4e1f4!2sMutare%2C%20Zimbabwe!5e0!3m2!1sen!2sus!4v1645512345678!5m2!1sen!2sus"
+allowfullscreen=""
+loading="lazy"
+></iframe>
+
+		<p>&copy; <span id="currentYear"></span>| Knox Tafadzwa Mangwiro | Zimbabwe</p>
+		<p class="last-update" id="lastModified"></p>
+	</footer>
+	<script src="scripts/getdates.js"></script>
+    
+</body>
+</html>

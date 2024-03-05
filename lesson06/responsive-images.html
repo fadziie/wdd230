@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="author" content="Knox Tafadzwa Mangwiro">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+    <title>Responsive Images</title>
+    </head>
+<body>
+    <header>
+        <h1>Responsive Images</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/durban_temple_small.webp" media="(max-width: 500px)">
+                <source srcset="images/durban_temple_medium.webp" media="(max-width: 1000px)">
+                <img src="images/durban_temple_large.webp" alt="The Durban Temple" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>

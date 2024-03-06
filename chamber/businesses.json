@@ -60,20 +60,20 @@
       },
 
       {
-        "name": "Glenaire",
-        "address": "365 Dr Pixley Kaseme and Joe Slovo Street, Durban CBD, Durban, 4001",
-        "phone": "031 301 2791",
-        "website": "http://www.glenaire.co.za/",
+        "name": "DripTech",
+        "address": "Chimoio Ave, Mutare (Off Railway Ave)",
+        "phone": "0782 705 570",
+        "website": "https://www.driptech.co.zw/",
         "membershipLevel":"Gold Membership",
-        "logo": "images/logos/glenaire_logo.webp"
+        "logo": "images/logos/DripTech_Logo.webp"
       },
       {
-        "name": "Chateau Gateaux Morningside",
-        "address": "136 Problem Mkhize Rd, Morningside, Durban, 4000",
-        "phone": "031 309 1661",
-        "website": "https://chateaugateaux.co.za/",
+        "name": "Eagle Estate Agents",
+        "address": "93 Herbert Chitepo Street, Murray Building, Mutare ",
+        "phone": " +263 775 550 980",
+        "website": "https://www.eagleestateagents.com/",
         "membershipLevel":"Gold Membership",
-        "logo": "images/logos/chateaugateaux-logo.webp"
+        "logo": "images/logos/eagle_logo.webp"
       }
 
     

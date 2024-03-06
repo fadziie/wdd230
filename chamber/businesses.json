@@ -1,0 +1,81 @@
+[
+    {
+      "name": "Mutare Toyota",
+      "address": "99 H Chitepo Street Mutare City, P.O.Box 762,Mutare,Zimbabwe",
+      "phone": "+263 20 63920",
+      "website": "https://www.toyota.co.zw/",
+      "membershipLevel" : "Gold Membership",   
+      "logo": "images/logos/toyota_zimbabwe.webp"
+    },
+    {
+      "name": "Swift - Mutare",
+      "address": "17 Newcastle Road, Mutare, Zimbabwe",
+      "phone": "+263 8677 000777",
+      "website": "https://www.swift.co.zw/",
+      "membershipLevel" : "Silver Membership",
+      "logo": "images/logos/swift_mutare.webp"
+    },
+
+    {
+        "name": "The Wattle Company",
+        "address": "Head Office 3 Durban Road, Mutare, Zimbabwe",
+        "phone": "+263 20 63821",
+        "website": "https://www.wattle.co.zw/",
+        "membershipLevel" : "Silver Membership",
+        "logo": "images/logos/wattle_company.webp"
+      },
+
+      {
+        "name": "Border Timbers",
+        "address": "1 Aberdeen Road P O Box 458 Mutare, Zimbabwe",
+        "phone": "020-64224/0772100710-11",
+        "website": "https://www.bordertimbers.com/",
+        "membershipLevel" : "Silver Membership",
+        "logo": "images/logos/border_timbers.webp"
+      },
+    
+      {
+        "name": "Tanganda Tea Company Limited",
+        "address": "194 Mutare Road, Msasa, Harare, Zimbabwe",
+        "phone": "+263 242 447523/5",
+        "website": "https://tangandatea.com/",
+        "membershipLevel" : "Bronze Membership",
+        "logo": "images/logos/tanganda.webp"
+      },
+      {
+        "name": "Willwton Group",
+        "address": "6 Durban Road, Mutare, Zimbabwe",
+        "phone": "+263 20 61235",
+        "website": "https://www.tegascents.co.za/",
+        "membershipLevel" : "Bronze Membership",
+        "logo": "images/logos/willton_group.webp"
+      },
+      {
+        "name": "Cubh Contractors",
+        "address": "3rd Floor, Room 312 CAIPF Building, Mutare",
+        "phone": "+263775703051",
+        "membershipLevel" : "NP Membership",
+        "website": "https://cubhconstructionmutare.wordpress.com/",
+        "logo": "images/logos/cubh.webp"
+      },
+
+      {
+        "name": "Glenaire",
+        "address": "365 Dr Pixley Kaseme and Joe Slovo Street, Durban CBD, Durban, 4001",
+        "phone": "031 301 2791",
+        "website": "http://www.glenaire.co.za/",
+        "membershipLevel":"Gold Membership",
+        "logo": "images/logos/glenaire_logo.webp"
+      },
+      {
+        "name": "Chateau Gateaux Morningside",
+        "address": "136 Problem Mkhize Rd, Morningside, Durban, 4000",
+        "phone": "031 309 1661",
+        "website": "https://chateaugateaux.co.za/",
+        "membershipLevel":"Gold Membership",
+        "logo": "images/logos/chateaugateaux-logo.webp"
+      }
+
+    
+  ]
+  

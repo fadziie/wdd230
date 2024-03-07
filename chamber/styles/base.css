@@ -460,7 +460,7 @@ form input, form select, form textarea {
     position: relative; /* Added positioning */
   }
   
-  .card img{
+  .grid-container.card img{
     width:100%;
     
   }

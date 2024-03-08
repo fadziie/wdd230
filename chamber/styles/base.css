@@ -120,22 +120,11 @@ header,footer {
         color: white; /* Set link color */
     }
 
-    main {
-        max-width: 100%; /* Adjust the maximum width as needed */
-        margin: 0 auto; /* Center the main element */
-        display: grid;
-        grid-template-columns: 1fr; /* Single column layout */
-        gap: 5px; /* Adjust the gap between sections */
-        font-size: 18px;
-        color: #001625;
-        border-color: #e59500;
-        box-sizing: border-box;
-    }
-
+    
     
     
     /* Style for card sections */
-    .card,.card1, .card2, .card3, .card4 {
+    .cards,.card1, .card2, .card3, .card4 {
         border: 1px solid #ddd; /* Border for the cards */
         padding: 20px; /* Padding for content within the cards */
         border-radius: 8px; /* Rounded corners for a card-like appearance */
@@ -385,6 +374,7 @@ body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         padding: 10px;
     }
     
@@ -419,6 +409,8 @@ body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
     margin-left: 1.5rem;
     border: 5px solid #e59500;
     border-radius: 10px;
+    max-width: 100%;
+    grid-column: 1/2;
 }
 
 .form-row label {
@@ -449,7 +441,7 @@ form input, form select, form textarea {
     transition: border-color 0.3s ease;
     box-sizing: border-box;
 }
- .grid-container.card {
+ .card {
     border: 1px solid #ccc;
     padding: 10px;
     margin-top: 5px;
@@ -461,11 +453,11 @@ form input, form select, form textarea {
     position: relative; /* Added positioning */
   }
   
-  .grid-container.card img{
+  .card img{
     width:100%;
     
   }
-.directory{
+.grid-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(320px ,1fr));
     grid-gap: 10px;

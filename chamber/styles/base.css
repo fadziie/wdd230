@@ -315,7 +315,7 @@ body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
         /*display: flex;
         flex-direction: column;*/
         display: grid;
-        grid-template-rows: (4,auto);
+        grid-template-rows: repeat(4, auto);
         box-sizing: border-box;
       }
       

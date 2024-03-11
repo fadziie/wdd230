@@ -81,6 +81,9 @@ header,footer {
     background-color: #002642; /* Background color for header and footer */
     color: white;
 }
+.heading {
+    color: #ffffff;
+}
 .navigation{
     color: white;
     text-align: center;

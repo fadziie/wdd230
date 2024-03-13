@@ -490,6 +490,15 @@ form input, form select, form textarea {
   }
 
   .banner{
-    grid-column: 1/4;
+    display: block;
     background-color: aqua;
+    width: 100%; /* Ensure it spans the full width */
+  text-align: center; /* Center the text */
+  padding: 10px; /* Add some padding */
+  position: fixed; /* Make it stick to the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it's on top of other content */
+  color: #001625;
+  margin-top: 15px;
   }

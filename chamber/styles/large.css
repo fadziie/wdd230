@@ -105,4 +105,11 @@
       display: flex;
       justify-content: space-around;
   }
+  .list-container .business-list-item {
+    grid-template-columns: repeat(4, 1fr); /* Four columns for larger screens */
+    text-align:start;
+  }
+  .list-container ul li:nth-child(odd) {
+    background-color: #f9f9f9;  
+  }  
 }

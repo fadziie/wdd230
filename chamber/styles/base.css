@@ -482,4 +482,14 @@ form input, form select, form textarea {
     list-style-type: none;
     padding: 0;
   }
-  
+   
+   .business-list-item {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout by default */
+    gap: 10px; /* Adjust spacing between items as needed */
+  }
+
+  .banner{
+    grid-column: 1/4;
+    background-color: aqua;
+  }

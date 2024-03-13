@@ -1,6 +1,6 @@
 // Function to fetch data from the JSON file
 function fetchData() {
-    fetch('businesses.json')
+    fetch('data/businesses.json')
       .then(response => response.json())
       .then(data => displayData(data));
   }
@@ -59,25 +59,29 @@ function fetchData() {
    // Function to create a list item for the business
    function createListItem(business) {
     const listItem = document.createElement('li');
-
-    const title = document.createElement('h2');
-    title.innerText = business.name;
-    listItem.appendChild(title);
-
-    const address = document.createElement('p');
-    address.innerText = 'Address: ' + business.address;
+    listItem.classList.add('business-list-item'); // Added for additional styling
+  
+    const name = document.createElement('div');
+    name.innerText = business.name;
+    listItem.appendChild(name);
+  
+    const address = document.createElement('div');
+    address.innerText = `Address: ${business.address}`;
     listItem.appendChild(address);
-
-    const phone = document.createElement('p');
-    phone.innerText = 'Phone: ' + business.phone;
+  
+    const phone = document.createElement('div');
+    phone.innerText = `Phone: ${business.phone}`;
     listItem.appendChild(phone);
-
-    const website = document.createElement('p');
-    website.innerText = 'Visit Website' + business.website;
-    listItem.appendChild(website)
-
+  
+    const website = document.createElement('a');
+    website.href = business.website;
+    website.innerText = 'Visit Website';
+    website.target = '_blank'; // Open in a new tab
+    listItem.appendChild(website);
+  
     return listItem;
   }
+  
   // Function to toggle between grid and list view
   function toggleView(view) {
     currentView = view;

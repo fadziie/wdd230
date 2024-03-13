@@ -160,4 +160,11 @@ nav a {
     font-size: 1.5rem;
     font-family:"Poppins", serif;
   }
+
+  .weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   

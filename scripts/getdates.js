@@ -73,3 +73,27 @@ document.addEventListener("DOMContentLoaded", function() {
       main.appendChild(p);
   }
 });
+
+async function fetchWeatherData() {
+  const apiKey = "e9ad653b9e064757388ed45595c70f41";
+  const city = "Mutare";
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
+
+  // Use 'url' instead of 'apiURL'
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      const temperature = Math.round((data.main.temp - 32) * 5/9); // Convert to Celsius
+      const weatherDescription = data.weather[0].description;
+      const iconCode = data.weather[0].icon;
+      const iconUrl = `http://openweathermap.org/img/w/${iconCode}.png`;
+
+      document.getElementById('weather-temp').textContent = `Temperature: ${temperature} °C`;
+      document.getElementById('weather-desc').textContent = `Condition: ${weatherDescription}`;
+      document.getElementById('weather-icon').setAttribute('src', iconUrl);
+      document.getElementById('weather-icon').setAttribute('alt', weatherDescription);
+
+    })
+    .catch(error => console.error('Error fetching weather data:', error));
+}
+document.addEventListener('DOMContentLoaded', fetchWeatherData);

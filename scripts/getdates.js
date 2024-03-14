@@ -53,26 +53,45 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-  document.addEventListener("DOMContentLoaded", function() {
-    const rangeInput = document.getElementById("page-rating");
-    const rangeValue = document.getElementById("rangeValue");
-
-    rangeInput.addEventListener("input", function() {
-        rangeValue.textContent = this.value;
-    });
-});
-
 document.addEventListener("DOMContentLoaded", function() {
-  const params = new URLSearchParams(window.location.search);
-  // Example: Extracting the 'username' parameter
-  const username = params.get('username'); // Assuming 'username' is one of the form fields
-  if(username) {
-      const main = document.querySelector('main');
-      const p = document.createElement('p');
-      p.textContent = `Username: ${username}`;
-      main.appendChild(p);
-  }
+  const form = document.querySelector("form");
+  const passwordInput = document.getElementById("password");
+  const confirmPasswordInput = document.getElementById("confirm-password");
+  const emailInput = document.getElementById("email");
+  const rangeInput = document.getElementById("page-rating");
+  const rangeValue = document.getElementById("rangeValue");
+
+  // Display range slider value
+  rangeInput.addEventListener("input", function() {
+      rangeValue.textContent = this.value;
+  });
+
+  // Form submission event listener
+  form.addEventListener("submit", function(event) {
+      let isValid = true;
+      const password = passwordInput.value;
+      const confirmPassword = confirmPasswordInput.value;
+      const email = emailInput.value;
+      
+      // Check if passwords match
+      if (password !== confirmPassword) {
+          alert("Passwords do not match.");
+          isValid = false;
+      }
+      
+      // Check if email domain is byui.edu
+      if (!email.endsWith("@byui.edu")) {
+          alert("Email must be a BYU-Idaho email.");
+          isValid = false;
+      }
+
+      // Prevent form submission if validation fails
+      if (!isValid) {
+          event.preventDefault();
+      }
+  });
 });
+
 
 async function fetchWeatherData() {
   const apiKey = "e9ad653b9e064757388ed45595c70f41";

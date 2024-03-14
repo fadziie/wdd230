@@ -494,10 +494,10 @@ form input, form select, form textarea {
     background-color: aqua;
     width: 100%; /* Ensure it spans the full width */
   text-align: center; /* Center the text */
-  padding: 10px; /* Add some padding */
+  padding: 2%; /* Add some padding */
   position: fixed; /* Make it stick to the top */
   top: 0;
-  left: 0;
+  margin: 0;
   z-index: 1000; /* Ensure it's on top of other content */
   color: white;
   margin-top: 15px;
@@ -505,7 +505,7 @@ form input, form select, form textarea {
 
   .forecast-container {
     display: flex;
-    justify-content: space-around;
+    justify-content:flex-start;
     margin-top: 20px;
 }
 
@@ -519,8 +519,8 @@ form input, form select, form textarea {
 }
 
 .forecast-card img {
-    width: 60px;
-    height: 60px;
+    width: 20px;
+    height: 20px;
 }
 
 .forecast-card p {

@@ -91,7 +91,7 @@ async function fetchWeatherData() {
       document.getElementById('weather-temp').textContent = `Temperature: ${temperature} °C`;
       document.getElementById('weather-desc').textContent = `Condition: ${weatherDescription}`;
       document.getElementById('weather-icon').setAttribute('src', iconUrl);
-      document.getElementById('weather-icon').setAttribute('alt', weatherDescription);
+      document.getElementById('weather-icon').setAttribute('alt', weatherDescription);git
 
     })
     .catch(error => console.error('Error fetching weather data:', error));

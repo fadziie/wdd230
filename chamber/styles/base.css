@@ -492,10 +492,9 @@ form input, form select, form textarea {
   .banner{
     display: block;
     background-color:#e59500;
-    width: 100%; /* Ensure it spans the full width */
-    margin-left: 1%;
-    margin-right: 50%;
-  text-align: center; /* Center the text */
+    width: 92%; /* Ensure it spans the full width */
+    margin-left: 2%;
+   text-align: center; /* Center the text */
   padding: 2%; /* Add some padding */
   top: 0;
   z-index: 1000; 

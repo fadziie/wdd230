@@ -59,25 +59,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
   
 });
+
 document.addEventListener('DOMContentLoaded', function() {
   const bannerElement = document.querySelector('.banner');
   const closeButton = document.createElement('button');
   closeButton.textContent = '❌';
-  closeButton.style.cssText = 'position: absolute; right: 10px; top: 5px; cursor: pointer;';
-  bannerElement.appendChild(closeButton); // Append closeButton to the banner
+  closeButton.style.cssText = 'position: absolute; right: 110px; top: 15px; cursor: pointer;';
   
   const currentDay = new Date().getDay();
   if (currentDay >= 1 && currentDay <= 3) {
-      // Add message and make visible only on Monday, Tuesday, Wednesday
-      bannerElement.innerHTML += '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.';
+      bannerElement.innerHTML = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.';
+      bannerElement.appendChild(closeButton);
       bannerElement.classList.add('visible');
   }
 
-  // Close the banner when the close button is clicked
   closeButton.addEventListener('click', function() {
       bannerElement.classList.remove('visible');
   });
 });
+
 
 
 

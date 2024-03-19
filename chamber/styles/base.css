@@ -490,7 +490,7 @@ form input, form select, form textarea {
   }
 
   .banner{
-    display: block;
+    display: none;
     background-color:#e59500;
     width: 92%; /* Ensure it spans the full width */
     margin-left: 2%;
@@ -501,6 +501,19 @@ form input, form select, form textarea {
   color:#001625;
   margin-top: 20px;
   margin-bottom: 20px;
+  }
+  
+  .banner button {
+    margin-left: auto;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+  .banner.visible {
+    display: block; /* This will show the banner when the .visible class is added */
   }
 
   .forecast-container {

@@ -491,16 +491,17 @@ form input, form select, form textarea {
 
   .banner{
     display: block;
-    background-color: aqua;
+    background-color:#e59500;
     width: 100%; /* Ensure it spans the full width */
+    margin-left: 1%;
+    margin-right: 50%;
   text-align: center; /* Center the text */
   padding: 2%; /* Add some padding */
-  position: fixed; /* Make it stick to the top */
   top: 0;
-  margin: 0;
-  z-index: 1000; /* Ensure it's on top of other content */
-  color: white;
-  margin-top: 15px;
+  z-index: 1000; 
+  color:#001625;
+  margin-top: 20px;
+  margin-bottom: 20px;
   }
 
   .forecast-container {

@@ -59,31 +59,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
   
 });
+document.addEventListener('DOMContentLoaded', function() {
+  const bannerElement = document.querySelector('.banner');
+  const closeButton = document.createElement('button');
+  closeButton.textContent = '❌';
+  closeButton.style.cssText = 'position: absolute; right: 10px; top: 5px; cursor: pointer;';
+  bannerElement.appendChild(closeButton); // Append closeButton to the banner
+  
+  const currentDay = new Date().getDay();
+  if (currentDay >= 1 && currentDay <= 3) {
+      // Add message and make visible only on Monday, Tuesday, Wednesday
+      bannerElement.innerHTML += '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.';
+      bannerElement.classList.add('visible');
+  }
 
-// Display banner on Mondays, Tuesdays, and Wednesdays
-const bannerElement = document.createElement('div');
-bannerElement.classList.add('banner');
-const closeButton = document.createElement('button');
-closeButton.textContent = '❌';
-closeButton.style.float = 'right'; // Position the close button on the right
-
-// Append closeButton directly to bannerElement
-bannerElement.appendChild(closeButton);
-
-const currentDay = new Date().getDay();
-if (currentDay >= 1 && currentDay <= 3) {
-  // Set the message separately from the closeButton
-  const message = document.createTextNode('🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.');
-  bannerElement.insertBefore(message, closeButton);
-} else {
-  bannerElement.style.display = 'none';
-}
-
-document.body.prepend(bannerElement);
-
-// Close the banner when the close button is clicked
-closeButton.addEventListener('click', function() {
-  bannerElement.style.display = 'none';
+  // Close the banner when the close button is clicked
+  closeButton.addEventListener('click', function() {
+      bannerElement.classList.remove('visible');
+  });
 });
+
+
+
+
 
 document.getElementById('submissionDate').value = Date.now();

@@ -495,7 +495,7 @@ form input, form select, form textarea {
     width: 92%; /* Ensure it spans the full width */
     margin-left: 2%;
    text-align: center; /* Center the text */
-  padding: 2%; /* Add some padding */
+  padding: 1%; /* Add some padding */
   top: 0;
   z-index: 1000; 
   color:#001625;

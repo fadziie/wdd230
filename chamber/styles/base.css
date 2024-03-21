@@ -302,14 +302,16 @@ body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
   }
   
   .sidebar {
-    background-color: #f0f0f0; /* Example color */
+    background-color:white; /* Example color */
   }
 
   .sidebar > div {
     padding: 10px;
     margin-bottom: 20px; /* Space between sidebar items */
-    background-color: #f0f0f0; /* Example background color */
-    border-radius: 5px; /* Example border radius */}
+    background-color: #001625; /* Example background color */
+    border-radius: 5px; /* Example border radius */
+    color: #ffffff;
+  }
 
     .sidebar {
         /*display: flex;
@@ -418,6 +420,9 @@ body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
     border-radius: 10px;
     max-width: 100%;
     grid-column: 1/2;
+    background-color: #001625;
+    color: #ffffff;
+    
 }
 
 .form-row label {
@@ -431,9 +436,11 @@ body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
 form label {
     display: block;
     margin-bottom: 1rem;
-    color: #001625;
+    color: white;
     font-size: 1rem;
+    
 }
+    
 
 form input, form select, form textarea {
     display: block;

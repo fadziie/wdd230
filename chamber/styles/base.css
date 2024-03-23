@@ -315,18 +315,34 @@ body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
     background-color: #001625; /* Example background color */
     border-radius: 5px; /* Example border radius */
     color: #ffffff;
-  }
+    
+    }
 
     .sidebar {
         /*display: flex;
         flex-direction: column;*/
         display: grid;
-        grid-template-rows: repeat(4, auto);
+        grid-template-rows: 250px 375px 350px 250px;
         box-sizing: border-box;
-      }
+        border:1px solid #001625;
+        height: 100vh;
+        
+        }
+         .mutare_aerial{
+          object-fit: cover;
+          max-width: 100%;
+          max-height: 100%;
+         }
+
+         .mutare_prince_of_wales{
+          object-fit: cover;
+          max-width: 100%;
+          max-height: 100%;
+         }
       
+
       .sidebar > div {
-        margin-bottom: 20px; /* Space between div elements */
+        margin-bottom: 5px; /* Space between div elements */
       }
       
       .sidebar > div:last-child {

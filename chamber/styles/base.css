@@ -142,6 +142,10 @@ header,footer {
     .card a:hover, .card1 a:hover {
         text-decoration: underline; /* Underline links on hover */
     }
+
+   .cards {
+      text-align: start;
+    }
       .footer {
         background-color:#002642 ;
          align-items: center;
@@ -535,7 +539,8 @@ form input, form select, form textarea {
     margin: 0 5px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    background-color:#001625;
+    color: #ffffff;
 }
 
 .forecast-card img {

@@ -323,10 +323,7 @@ body.dark-mode .card, body.dark-mode header, body.dark-mode footer {
         flex-direction: column;*/
         display: grid;
         grid-template-rows: 550px 400px 400px 400px;
-        box-sizing: border-box;
-        border:1px solid #001625;
         height: 100vh;
-        
         }
          .mutare_aerial{
           object-fit: cover;

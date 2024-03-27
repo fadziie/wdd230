@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Cozumel with ~Scoots~ scooter rentals. Easy and friendly service with a variety of scooters and ATVs. Book now for your adventure!">
+    <link rel="icon" type="image/png" href="path/to/favicon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="path/to/mstile-144x144.png">
+    <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
+    <meta name="apple-mobile-web-app-title" content="App Title">
+    <html dir="ltr"> or <html dir="rtl">
+    <link rel="canonical" href="https://www.yoursite.com/page-url">
+    <link rel="alternate" hreflang="es" href="https://es.example.com/page">
+
+    <title>Reservations - ~Scoots~</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+<nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Make a Reservation</h1>
+        <div class="reservation-form">
+            <form action="submit-reservation.php" method="POST">
+                <div class="grid-container">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="period">Period:</label>
+                    <select id="period" name="period">
+                        <option value="half-day">Half Day</option>
+                        <option value="full-day">Full Day</option>
+                    </select>
+
+                    <label for="rentalType">Rental Type:</label>
+                    <select id="rentalType" name="rentalType">
+                        <option value="scooter">Scooter</option>
+                        <option value="atv">ATV</option>
+                        <option value="jeep">Jeep</option>
+                    </select>
+
+                    <label for="number">Number of Rentals:</label>
+                    <input type="number" id="number" name="number" min="1" max="10" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="stateCountry">Home State/Country:</label>
+                    <input type="text" id="stateCountry" name="stateCountry" required>
+
+                    <label for="cruiseLine">Cruise Line:</label>
+                    <input type="text" id="cruiseLine" name="cruiseLine">
+
+                    <label for="comments">Special Accommodations/Comments:</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+                <button type="submit">Submit Reservation</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <!-- Footer Content -->
+    </footer>
+</body>
+</html>

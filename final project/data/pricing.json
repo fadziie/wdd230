@@ -1,0 +1,21 @@
+{
+    "rentals": [
+        {
+            "type": "Honda Metropolitan (49cc)",
+            "maxPersons": 1,
+            "halfDayReservation": 20,
+            "fullDayReservation": 30,
+            "halfDayWalkIn": 25,
+            "fullDayWalkIn": 35
+        },
+        {
+            "type": "Honda Dio (110cc)",
+            "maxPersons": 2,
+            "halfDayReservation": 30,
+            "fullDayReservation": 40,
+            "halfDayWalkIn": 35,
+            "fullDayWalkIn": 45
+        }
+       
+    ]
+}

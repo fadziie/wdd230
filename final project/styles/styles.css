@@ -37,12 +37,15 @@ main {
 
 .home {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: (2, 1fr);
+    grid-template-rows: (3,1fr);
+    gap: 20px;
     width: 100%;
     
     }
     #hero-banner{
-        grid-column: 2/4;
+        grid-column: 1/-1;
+        grid-row: 1/3;
     }
     #hero-banner img{
        max-width: 100%;
@@ -51,31 +54,22 @@ main {
     #brand_logo img{
         border-radius: 10% 10%;
     }
-    .animate_banner {
-        width: 100%;
-        height: 200px; /* Adjust as needed */
-        position: relative;
-        overflow: hidden; /* Keeps the scooter within the banner bounds */
-        background-color:#f0f0f0 ; /* Example background color */
-      }
-      
-      .scooter {
-        background-image: url(../images/animate_scooter.webp); /* Update with the path to your image */
-        width: 100px; /* Adjust based on your image size */
-        height: 100px; /* Adjust based on your image size */
-        position: absolute;
-        animation: scooterMove 60s linear infinite;
-        background-size: contain;
-        background-repeat: no-repeat;
-        
-      }
     
-      
-      @keyframes scooterMove {
-        0% { left: -100px; }
-        100% { left: 100%; }
-      }
-      
+    .sidebar {
+        grid-column: 1 / 2; /* Occupies the first half of the first column */
+        grid-row: 2 / 5; /* Spans from the second to the fourth row */
+    }
+    
+    .home-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Creates 2 columns for the images */
+        grid-template-rows: repeat(2, 1fr); /* Creates 2 rows for the images */
+        gap: 20px; /* Adjust the gap between images as needed */
+        grid-column: 2 / 3; /* Positions the container in the second half of the first column to the end */
+        grid-row: 2 / 5; /* Spans from the second to the fourth row */
+    }
+
+    
 
 @media (max-width: 600px) {
     nav ul li {

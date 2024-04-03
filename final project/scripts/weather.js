@@ -37,4 +37,18 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${api
     console.error('Failed to fetch weather data:', error);
   });
 
+  document.addEventListener("DOMContentLoaded", function() {
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.hero-image');
+    const totalImages = images.length;
+
+    function changeImage() {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % totalImages;
+        images[currentIndex].classList.add('active');
+    }
+
+    // Change image every 5 seconds
+    setInterval(changeImage, 5000);
+});
 

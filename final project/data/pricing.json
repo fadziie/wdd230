@@ -1,54 +1,85 @@
+
+
 {
     "rentals": [
-        {
-            "type": "Honda Metropolitan (49cc)",
-            "maxPersons": 1,
-            "halfDayReservation": 20,
-            "fullDayReservation": 30,
-            "halfDayWalkIn": 25,
-            "fullDayWalkIn": 35
-        },
-        {
-            "type": "Honda Dio (110cc)",
-            "maxPersons": 2,
-            "halfDayReservation": 30,
-            "fullDayReservation": 40,
-            "halfDayWalkIn": 35,
-            "fullDayWalkIn": 45
-        },
-        {
-            "type": "Honda PCX150 Scooter (149cc)",
-            "maxPersons": 2,
-            "halfDayReservation": 40,
-            "fullDayReservation": 50,
-            "halfDayWalkIn": 45,
-            "fullDayWalkIn": 55
-            
-        },
-        {
-            "type": "Honda Pioneer ATV (1000cc)",
-            "maxPersons": 4,
-            "halfDayReservation": 50,
-            "fullDayReservation": 70,
-            "halfDayWalkIn": 60,
-            "fullDayWalkIn": 80
-        },
-        {
-            "type": "Jeep Wrangler- 4 door with a/c ",
-            "maxPersons": 5,
-            "halfDayReservation": 70,
-            "fullDayReservation": 100,
-            "halfDayWalkIn": 85,
-            "fullDayWalkIn": 125
-        },
-        {
-            "type": "Jeep Wrangler- 2 door ",
-            "maxPersons": 4,
-            "halfDayReservation": 60,
-            "fullDayReservation": 85,
-            "halfDayWalkIn": 70,
-            "fullDayWalkIn": 90
+      {
+        "type": "Honda Metropolitan (49cc)",
+        "maxPersons": 1,
+        "halfDayReservation": 20,
+        "fullDayReservation": 30,
+        "halfDayWalkIn": 25,
+        "fullDayWalkIn": 35,
+        "images": {
+          "red": "images/honda_metropolitan_red.jpg",
+          "black": "images/honda_metropolitan_black.webp",
+          "blue": "images/honda_metropolitan_blue_metallic.avif"
         }
-       
+      },
+      {
+        "type": "Honda Dio (110cc)",
+        "maxPersons": 2,
+        "halfDayReservation": 30,
+        "fullDayReservation": 40,
+        "halfDayWalkIn": 35,
+        "fullDayWalkIn": 45,
+        "images": {
+          "red": "images/honda_dio_red_metallic.webp",
+          "black": "images/honda_dio_black_gold.webp",
+          "blue": "images/honda_dio_jazzy_blue_metallic.webp"
+        }
+      },
+      {
+        "type": "Honda PCX150 Scooter (149cc)",
+        "maxPersons": 2,
+        "halfDayReservation": 40,
+        "fullDayReservation": 50,
+        "halfDayWalkIn": 45,
+        "fullDayWalkIn": 55,
+        "images": {
+          "red": "images/honda_pcx150_red.jpg",
+          "black": "images/honda_pcx150_black.webp",
+          "blue": "images/honda_pcx150_blue.jpg"
+        }
+      },
+      {
+        "type": "Honda Pioneer ATV (1000cc)",
+        "maxPersons": 4,
+        "halfDayReservation": 50,
+        "fullDayReservation": 70,
+        "halfDayWalkIn": 60,
+        "fullDayWalkIn": 80,
+        "images": {
+          "red": "images/honda_pioneer_1000_avenger_red.avif",
+          "black": "images/honda_pioneer_1000_black.avif",
+          "blue": "images/honda_pioneer_1000_deluxe_shale_blue.avif"
+        }
+      },
+      {
+        "type": "Jeep Wrangler- 4 door with a/c ",
+        "maxPersons": 5,
+        "halfDayReservation": 70,
+        "fullDayReservation": 100,
+        "halfDayWalkIn": 85,
+        "fullDayWalkIn": 125,
+        "images": {
+          "red": "images/jeep_4_red.png",
+          "black": "images/jeep_4_black.png",
+          "blue": "images/jeep_4_ocean_blue.png"
+        }
+      },
+      {
+        "type": "Jeep Wrangler- 2 door ",
+        "maxPersons": 4,
+        "halfDayReservation": 60,
+        "fullDayReservation": 85,
+        "halfDayWalkIn": 70,
+        "fullDayWalkIn": 90,
+        "images": {
+          "red": "images/jeep_2_rubicon_firecracker_red.png",
+          "black": "images/jeep_2_rubicon_black.png",
+          "blue": "images/jeep_2_rubicon_hydro_blue.png"
+        }
+      }
     ]
-}
+  }
+  

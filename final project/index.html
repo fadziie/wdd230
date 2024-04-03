@@ -33,12 +33,20 @@
         <div id="hero-banner">
         <h1>Welcome to ~Scoots~!</h1>
         <p></p>
-        <picture>
-            <source media="(max-width: 600px)" srcset="images/red_vintage_scooter">
-            <source media="(max-width: 768px)" srcset="images/red_vintage_scooter">
-            <source media="(max-width: 1024px)" srcset="images/red_vintage_scooter">
-            <img src="images/645cf73a1399f93ef209b0bc_Hero-Wide-Cozumel.jpg" alt="hero-banner Image">
-        </picture>
+        <div id="hero-image-container">
+            <img src="images/645cf73a1399f93ef209b0bc_Hero-Wide-Cozumel.jpg" class="hero-image active">
+            <img src="images/puerta maya.jpg" class="hero-image">
+            <img src="images/Cozumel-cruise-port.webp" class="hero-image">
+        </div>
+        <div id="weather" class="weather-overlay">
+            <h2>Weather</h2>
+            <p>Temperature: <span id="temperature">40</span></p>
+            <p>Description: <span id="weather-description">Sunny</span></p>
+            <figure>
+                <img id="weather-icon" src="https://openweathermap.org/img/w/01d.png" alt="current condition icon">
+                <figcaption id="weather-caption"></figcaption>
+            </figure>
+        </div>
         <a href="reservations.html" class="hero_button">Book Now</a>
         </div>
         <section class="rental-summary">
@@ -46,7 +54,7 @@
             <div class="home-container">
               <!-- Add items here, example: -->
               <div>
-                <img src="images/honda-metropolitan-retro-scooter_red.jpg" alt="Scooter">
+                <img src="images/honda_metropolitan_red.jpg" alt="Scooter">
                 <h3>Scooters</h3>
                 <p>Perfect for single adventurers looking to explore the island.</p>
               </div>
@@ -63,22 +71,12 @@
         <p>Jeep Wrangler - 4 door manual with A/C - 5 person. Perfect for families or groups wanting to explore in comfort.</p>
       </div>
       <div>
-        <img src="images/jeep_2_rubicon-2d-hydro-blue-387.png" alt="Jeep Wrangler 2 Door">
+        <img src="images/jeep_2_rubicon_hydro_blue.png" alt="Jeep Wrangler 2 Door">
         <p>Jeep Wrangler - 2 door - open air - manual - 4 person. Experience the island with the wind in your hair.</p>
       </div>
             </div>
           </section>
-        <aside class="sidebar">
-            <div id="weather">
-                <h2>Weather</h2>
-                <p>Temperature: <span id="temperature">40</span>°F</p>
-                    <p>Description: <span id="weather-description">Sunny</span></p>
-                    <figure>
-                        <img id="weather-icon" src="https://openweathermap.org/img/w/01d.png" alt="current condition icon">
-                        <figcaption id="weather-caption">Sunny</figcaption>
-                    </figure>
-            </div>
-        </aside>
+        
         
     </main>
     <footer>

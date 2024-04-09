@@ -6,24 +6,29 @@ document.addEventListener('DOMContentLoaded', function() {
             data.rentals.forEach(rental => {
                 let row = tableBody.insertRow();
                 
-                // Image cell with default image (red)
+                // Cell for image and color swatches
                 let imgCell = row.insertCell(0);
+                imgCell.className = 'image-cell'; // Add this line
                 let img = document.createElement('img');
                 img.src = rental.images.red; // Default image
                 img.alt = rental.type;
-                img.style.width = '200px'; // Adjust as necessary
+                img.style.width = '200px';
+                img.style.display = 'block'; // Ensure the image is block-level to allow swatches to appear below
                 imgCell.appendChild(img);
                 
-                // Color selection
-                let colorCell = imgCell; // Reusing the image cell for simplicity
+                // Container for color swatches to ensure they appear below the image
+                let swatchesContainer = document.createElement('div');
+                swatchesContainer.style.textAlign = 'center'; // Center-align swatches if desired
                 ['red', 'black', 'blue'].forEach(color => {
                     let colorDiv = document.createElement('div');
                     colorDiv.className = 'color-swatch';
                     colorDiv.style.backgroundColor = color;
                     colorDiv.onclick = () => img.src = rental.images[color];
-                    colorCell.appendChild(colorDiv);
+                    swatchesContainer.appendChild(colorDiv);
                 });
+                imgCell.appendChild(swatchesContainer); // Add the swatches container to the same cell as the image
 
+                // Additional cells for rental details
                 row.insertCell(1).textContent = rental.type;
                 row.insertCell(2).textContent = rental.maxPersons;
                 row.insertCell(3).textContent = `$${rental.halfDayReservation}`;

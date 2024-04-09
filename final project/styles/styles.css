@@ -233,8 +233,32 @@ iframe {
     .grid-container {
         grid-template-columns: 1fr;
     }
-}
 
+    .home-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #rentalOptions{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+    }
+
+    #rentalOptions img{
+        width: 100%;
+        text-align: center;
+}
+ 
+}   
+
+    
+    
+    
 .color-swatch {
     display: inline-block;
     width: 20px;
@@ -242,4 +266,5 @@ iframe {
     margin: 2px;
     border-radius: 50%;
     cursor: pointer;
+    margin-top: 10px;
 }

@@ -10,7 +10,7 @@
         "halfDayWalkIn": 25,
         "fullDayWalkIn": 35,
         "images": {
-          "red": "images/honda_metropolitan_red.jpg",
+          "red": "images/honda_metropolitan_red.webp",
           "black": "images/honda_metropolitan_black.webp",
           "blue": "images/honda_metropolitan_blue_metallic.avif"
         }
@@ -77,7 +77,7 @@
         "images": {
           "red": "images/jeep_2_rubicon_firecracker_red.png",
           "black": "images/jeep_2_rubicon_black.png",
-          "blue": "images/jeep_2_rubicon_hydro_blue.png"
+          "blue": "images/jeep_2_rubicon_hydro_blue.webp"
         }
       }
     ]

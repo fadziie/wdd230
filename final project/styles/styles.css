@@ -14,7 +14,7 @@ body {
 header, footer {
     text-align: center;
     padding: 1em;
-    background-color: #007BFF;
+    background-color: #083769ec;
     color: white;
 }
 
@@ -136,7 +136,7 @@ th, td {
 }
 
 th {
-    background-color: #007BFF;
+    background-color:#083769ec;
     color: white;
 }
 

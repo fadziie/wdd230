@@ -83,6 +83,10 @@ main {
         border-radius: 8px;
         z-index: 2; /* Ensures it stays on top of images */
     }
+    .weather-overlay img{
+        width: 100px;
+        height:100px;
+    }
     
     #hero-banner {
         position: relative; /* This ensures absolute positioning within the container */

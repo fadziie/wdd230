@@ -104,6 +104,10 @@ main {
         grid-column: 2 / 3; /* Positions the container in the second half of the first column to the end */
         grid-row: 2 / 5; /* Spans from the second to the fourth row */
     }
+    .home-container img{
+        width: 400px;
+        height: 300px;
+    }
 
     
 

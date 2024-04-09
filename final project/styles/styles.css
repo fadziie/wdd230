@@ -17,7 +17,9 @@ header, footer {
     background-color: #083769ec;
     color: white;
 }
-
+h1, h2{
+    text-align: center;
+}
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -222,6 +224,23 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+.rental-agreements {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #eef;
+    border-radius: 8px;
+}
+
+.rental-agreements h2 {
+    color: #007BFF;
+}
+
+.rental-agreements ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 /* Contact page specific styling */

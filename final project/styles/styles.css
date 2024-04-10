@@ -17,6 +17,9 @@ header, footer {
     background-color: #083769ec;
     color: white;
 }
+header{
+    margin-top: 40px;
+}
 h1, h2{
     text-align: center;
 }
@@ -111,8 +114,7 @@ main {
         grid-row: 2 / 5; /* Spans from the second to the fourth row */
     }
     .home-container img{
-        width: 400px;
-        height: 300px;
+        width: 100%
     }
 
     
@@ -214,7 +216,7 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: #007BFF;
+    background-color: #083769ec;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -223,7 +225,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color:#083769ec;
 }
 
 .rental-agreements {
@@ -293,4 +295,24 @@ iframe {
     border-radius: 50%;
     cursor: pointer;
     margin-top: 10px;
+}
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #083769ec;
+    color: white;
+}
+
+.social-media-links {
+    margin: 10px 0;
+}
+
+.social-media-links a {
+    color: white; /* Icon color */
+    margin: 0 5px; /* Spacing between icons */
+    font-size: 24px; /* Icon size */
+}
+
+.social-media-links a:hover, .social-media-links a:focus {
+    color: #ccc; /* Color change on hover/focus */
 }
